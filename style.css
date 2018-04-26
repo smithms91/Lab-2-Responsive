@@ -1,105 +1,106 @@
 /* Generic Styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 body {
-    background-color: #f9fafc;
-    padding: 20px;
-    font-size: 62.5%; /* Makes rems easier to work with */
-    font-family: 'Open Sans', sans-serif;
+  background-color: #f9fafc;
+  padding: 20px;
+  font-size: 50%; /* Makes rems easier to work with */
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
 }
 
 
 /* Nav */
 .nav__logo {
-    display: inline-block;
-    font-size: 1rem;
-    color: #000;
-    text-decoration: none;
-    font-weight: 700;
-    cursor: pointer;
-    margin-bottom: 20px;
+  display: inline-block;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .nav__ul {
-    list-style: none;
-    font-size: .9rem;
+  list-style: none;
+  font-size: .9rem;
 }
 
 .nav__li {
-    padding: 8px 0;
-    border-radius: 25px;
-    transition: all .3s;
-    cursor: pointer;
+  padding: 8px 0;
+  border-radius: 25px;
+  transition: all .3s;
+  cursor: pointer;
 }
 
 .nav__li:not(:last-child) {
-    margin-bottom: 10px; /* Sets margin bottom on all nav li's except the bottom */
+  margin-bottom: 10px; /* Sets margin bottom on all nav li's except the bottom */
 }
 
 .nav__li:hover {
-    background-color: #000;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    padding-left: 46%;
+  background-color: #000;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  padding-left: 46%;
 }
 
 /* Main Section */
 .main__header {
-    color: #000;
-    font-size: 30px;
-    margin: 20px 0;
+  color: #000;
+  font-size: 30px;
+  margin: 20px 0;
 }
 
 .main__text {
-    font-size: .9rem;
-    border-left: 1px solid #69696a;
-    padding-left: 15px;
-    color: #69696a;
-    margin-bottom: 35px;
+  font-size: .9rem;
+  border-left: 1px solid #69696a;
+  padding-left: 15px;
+  color: #69696a;
+  margin-bottom: 35px;
 }
 
 .right__side {
-    display: none;
+  display: none;
 }
 
 
 /* Footer Section */
 .footer__button {
-    display: block;
-    transition: all .3s;
+  display: block;
+  transition: all .3s;
 }
 
 .footer__button:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .footer__button:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 footer a {
-    font-size: .9rem;
+  font-size: .9rem;
 }
 
 
 /* Active Style */
 .active {
-    background-color: #000;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
+  background-color: #000;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
 }
 
 
@@ -107,151 +108,150 @@ footer a {
 
 @media only screen and (min-width: 768px) {
 
-    /* Nav */
-    #nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 15%;
-    }
+  /* Nav */
+  #nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5%;
+  }
 
-    .nav__logo {
-        font-size: 1.3rem;
-        color: #000;
-        text-decoration: none;
-    }
+  .nav__logo {
+      font-size: 1.3rem;
+      color: #000;
+      text-decoration: none;
+  }
 
-    .nav__ul {
-        display: flex;
-        justify-content: space-around;
-    }
+  .nav__ul {
+      display: flex;
+      justify-content: space-around;
+  }
 
-    .nav__li {
-        padding: 10px 30px;
-        border-radius: 25px;
-    }
+  .nav__li {
+      padding: 10px 30px;
+      border-radius: 25px;
+  }
 
-    .nav__li:not(:last-child) {
-        margin: 0; /* Removes all margins for different layout */
-    }
+  .nav__li:not(:last-child) {
+      margin: 0; /* Removes all margins for different layout */
+  }
 
-    .nav__li:hover {
-        background-color: black;
-        padding: 10px 30px;
-        color: white;
-        border-radius: 25px;
-        cursor: pointer;
-    }
+  .nav__li:hover {
+      background-color: black;
+      padding: 10px 30px;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+  }
 
-    /* Main Section */
-    #main__section {    
-        margin: 0 40px;
-    }
+  /* Main Section */
+  #main__section {  
+      margin: 0 40px 20px 0 ;
+  }
 
-    .left__side {
-        width: 55%;
-    }
+  .left__side {
+      width: 55%;
+  }
 
-    .right__side {
-        position: absolute;
-        display: block;
-        top: 350px;
-        right: -80px;
-    }
+  .right__side {
+      position: relative;
+      display: block;
+      top: -95px;
+      right: -160px;
+  }
 
-    /* Circles */
-    .circle1 {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        background-color: rgba(247, 136, 167, 0.6);
-        border-radius: 250px;
-        right: 150px;
-        top: -65px;
-    }
+  /* Circles */
+  .circle1 {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: rgba(247, 136, 167, 0.6);
+      border-radius: 250px;
+      right: 150px;
+      top: -65px;
+  }
 
-    .circle2 {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        background-color:rgba(247, 193, 162, 0.7);
-        border-radius: 250px;
-        right: 245px;
-        top: 60px;
-    }
+  .circle2 {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-color:rgba(247, 193, 162, 0.7);
+      border-radius: 250px;
+      right: 245px;
+      top: 60px;
+  }
 
-    .circle3 {
-        width: 100px;
-        height: 100px;
-        background-color: rgba(207, 130, 213, 0.6);
-        border-radius: 250px;
-        position: absolute;
-        top: 140px;
-        right: 355px;
-    }
+  .circle3 {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(207, 130, 213, 0.6);
+      border-radius: 250px;
+      position: absolute;
+      top: 140px;
+      right: 355px;
+  }
 
-    /* Footer */
-    #footer {
-        position: absolute;
-        bottom: 75px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  /* Footer */
+  #footer {
+      position: absolute;
+      bottom: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 1200px) {
 
-    /* Nav */
-    #nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 40px;
-    }
+  /* Nav */
+  #nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 40px;
+  }
 
-    .nav__logo {
-        font-size: 1.4rem;
-        margin: 0;
-    }
+  .nav__logo {
+      font-size: 1.4rem;
+      margin: 0;
+  }
 
-    .nav__li {
-        font-size: .9rem;
-    }
+  .nav__li {
+      font-size: .9rem;
+  }
 
-    /* Main Section*/
-    #main__section {
-        margin: 130px 40px 0 40px;
-    }
+  /* Main Section*/
+  #main__section {
+      margin: 130px 40px 0 40px;
+  }
 
-    .left__side {
-        width: 40%;
-    }
+  .left__side {
+      width: 40%;
+  }
 
-    .right__side {
-        top: 280px;
-        right: 50px;
-    }
+  .right__side {
+      right: -80px;
+  }
 
-    /* Circles */
-    .circle1 {
-        width: 300px;
-        height: 300px;
-        top: -80px;
-        right: 250px;
-    }
+  /* Circles */
+  .circle1 {
+      width: 300px;
+      height: 300px;
+      top: -80px;
+      right: 250px;
+  }
 
-    .circle2 {
-        width: 200px;
-        height: 200px;
-        top: -60px;
-        right: 130px;
-    }
+  .circle2 {
+      width: 200px;
+      height: 200px;
+      top: -60px;
+      right: 130px;
+  }
 
-    .circle3 {
-        width: 150px;
-        height: 150px;
-        top: 100px;
-        right: 178px;
-    }
+  .circle3 {
+      width: 150px;
+      height: 150px;
+      top: 100px;
+      right: 178px;
+  }
 }
